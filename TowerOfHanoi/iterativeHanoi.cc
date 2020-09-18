@@ -27,7 +27,7 @@ void iterativeHanoi(int nDisk) {
     // if # of disks is even, the first move should be between A and B
     if ( nDisk % 2 == 0 ) {
         while ( towerC.size() != nDisk + 1 ) { 
-            // legal move between A and B
+            // allowed move between A and B
             if (towerA.back() > towerB.back()) {
                 towerB.push_back(towerA.back());
                 towerA.pop_back();
@@ -39,7 +39,7 @@ void iterativeHanoi(int nDisk) {
                 cout << "Moving disk " << (nDisk-towerA.back()+1) << " from B to A" <<  endl;
             }
 
-           // legal move between A and C
+           // allowed move between A and C
             if (towerA.back() > towerC.back()) {
                 towerC.push_back(towerA.back());
                 towerA.pop_back();
@@ -51,7 +51,7 @@ void iterativeHanoi(int nDisk) {
                 cout << "Moving disk " << (nDisk-towerA.back()+1) << " from C to A" <<  endl;
             }
 
-           // legal move between B and C
+           // allowed move between B and C
             if (towerB.back() > towerC.back()) {
                 towerC.push_back(towerB.back());
                 towerB.pop_back();
@@ -67,7 +67,7 @@ void iterativeHanoi(int nDisk) {
     // if # of disks is odd, the first move should be between A and C
     else{
         while ( towerC.size() != nDisk ) { 
-            // legal move between A and C
+            // allowed move between A and C
             if (towerA.back() > towerC.back()) {
                 towerC.push_back(towerA.back());
                 towerA.pop_back();
@@ -79,7 +79,7 @@ void iterativeHanoi(int nDisk) {
                 cout << "Moving disk " << (nDisk-towerA.back()+1) << " from C to A" <<  endl;
             }
 
-            // legal move between A and B
+            // allowed move between A and B
             if (towerA.back() > towerB.back()) {
                 towerB.push_back(towerA.back());
                 towerA.pop_back();
@@ -91,7 +91,7 @@ void iterativeHanoi(int nDisk) {
                 cout << "Moving disk " << (nDisk-towerA.back()+1) << " from B to A" <<  endl;
             }
 
-           // legal move between B and C
+           // allowed move between B and C
             if (towerB.back() > towerC.back()) {
                 towerC.push_back(towerB.back());
                 towerB.pop_back();
