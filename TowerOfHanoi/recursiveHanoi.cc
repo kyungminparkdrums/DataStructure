@@ -20,6 +20,7 @@ void recursiveHanoi(int nDisk, char source, char tmp, char target) {
         return;
     }
 
+    // recursion, with changing source/target/tmp towers
     recursiveHanoi(nDisk-1, source, target, tmp); 
     cout << "Moving disk " << nDisk << " from " << source << " to " << target << endl;
     recursiveHanoi(nDisk-1, tmp, source, target);
