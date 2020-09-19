@@ -1,15 +1,21 @@
 #include <iostream>
+#include <time.h>
 using namespace std;
 
 void recursiveHanoi(int, char, char, char);
 
 int main() {
     int nDisk; // # of disks
+    //clock_t start, stop; 
 
     cout << "Solving the tower of Hanoi recursively!\nEnter the number of disks: ";
     cin >> nDisk;
     
+    //start = clock();
     recursiveHanoi(nDisk,'A','B','C');
+    //stop = clock();
+
+    //cout << "Duration: " << (double)(stop-start) / CLOCKS_PER_SEC << "s" << endl;
  
     return 0;
 }
