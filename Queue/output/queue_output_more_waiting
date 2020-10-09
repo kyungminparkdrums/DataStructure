@@ -1,5 +1,3 @@
-Script started on Sat Oct 10 06:49:15 2020
-[?1034hMacBook-Pro-2:Queue Kyungmin$ exit./queue [4Pexit[K./a.out 
 
 current time =  0
 ->NEW CUSTOMER) customer: 0, time: 0, service time: 5, 
@@ -284,7 +282,3 @@ current time =  59
 Total wait time = 28
 Total customer = 34
 Average wait time = 0.823529
-MacBook-Pro-2:Queue Kyungmin$ exit
-exit
-
-Script done on Sat Oct 10 06:49:25 2020
