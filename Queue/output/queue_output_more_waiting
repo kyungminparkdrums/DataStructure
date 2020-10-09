@@ -1,0 +1,290 @@
+Script started on Sat Oct 10 06:49:15 2020
+[?1034hMacBook-Pro-2:Queue Kyungmin$ exit./queue [4Pexit[K./a.out 
+
+current time =  0
+->NEW CUSTOMER) customer: 0, time: 0, service time: 5, 
+->Desk 0 NEW SERVICE) customer 0, start time: 0, wait time: 0
+
+current time =  1
+->NEW CUSTOMER) none, 
+->Desk 0 IN SERVICE) serving customer:  0
+
+current time =  2
+->NEW CUSTOMER) none, 
+->Desk 0 IN SERVICE) serving customer:  0
+
+current time =  3
+->NEW CUSTOMER) customer: 1, time: 3, service time: 1, 
+->Desk 0 IN SERVICE) serving customer:  0
+->Desk 1 NEW SERVICE) customer 1, start time: 3, wait time: 0
+
+current time =  4
+->NEW CUSTOMER) none, 
+->Desk 0 IN SERVICE) serving customer:  0
+
+current time =  5
+->NEW CUSTOMER) customer: 2, time: 5, service time: 5, 
+->Desk 0 NEW SERVICE) customer 2, start time: 5, wait time: 0
+
+current time =  6
+->NEW CUSTOMER) none, 
+->Desk 0 IN SERVICE) serving customer:  2
+
+current time =  7
+->NEW CUSTOMER) customer: 3, time: 7, service time: 2, 
+->Desk 0 IN SERVICE) serving customer:  2
+->Desk 1 NEW SERVICE) customer 3, start time: 7, wait time: 0
+
+current time =  8
+->NEW CUSTOMER) customer: 4, time: 8, service time: 4, 
+->Desk 0 IN SERVICE) serving customer:  2
+->Desk 1 IN SERVICE) serving customer:  3
+
+current time =  9
+->NEW CUSTOMER) customer: 5, time: 9, service time: 1, 
+->Desk 0 IN SERVICE) serving customer:  2
+->Desk 1 NEW SERVICE) customer 4, start time: 9, wait time: 1
+
+current time =  10
+->NEW CUSTOMER) none, 
+->Desk 0 NEW SERVICE) customer 5, start time: 10, wait time: 1
+->Desk 1 IN SERVICE) serving customer:  4
+
+current time =  11
+->NEW CUSTOMER) customer: 6, time: 11, service time: 1, 
+->Desk 0 NEW SERVICE) customer 6, start time: 11, wait time: 0
+->Desk 1 IN SERVICE) serving customer:  4
+
+current time =  12
+->NEW CUSTOMER) customer: 7, time: 12, service time: 5, 
+->Desk 0 NEW SERVICE) customer 7, start time: 12, wait time: 0
+->Desk 1 IN SERVICE) serving customer:  4
+
+current time =  13
+->NEW CUSTOMER) customer: 8, time: 13, service time: 3, 
+->Desk 0 IN SERVICE) serving customer:  7
+->Desk 1 NEW SERVICE) customer 8, start time: 13, wait time: 0
+
+current time =  14
+->NEW CUSTOMER) none, 
+->Desk 0 IN SERVICE) serving customer:  7
+->Desk 1 IN SERVICE) serving customer:  8
+
+current time =  15
+->NEW CUSTOMER) customer: 9, time: 15, service time: 4, 
+->Desk 0 IN SERVICE) serving customer:  7
+->Desk 1 IN SERVICE) serving customer:  8
+
+current time =  16
+->NEW CUSTOMER) none, 
+->Desk 0 IN SERVICE) serving customer:  7
+->Desk 1 NEW SERVICE) customer 9, start time: 16, wait time: 1
+
+current time =  17
+->NEW CUSTOMER) none, 
+->Empty queue
+->Desk 1 IN SERVICE) serving customer:  9
+
+current time =  18
+->NEW CUSTOMER) none, 
+->Empty queue
+->Desk 1 IN SERVICE) serving customer:  9
+
+current time =  19
+->NEW CUSTOMER) customer: 10, time: 19, service time: 1, 
+->Desk 0 NEW SERVICE) customer 10, start time: 19, wait time: 0
+->Desk 1 IN SERVICE) serving customer:  9
+
+current time =  20
+->NEW CUSTOMER) none, 
+->Empty queue
+
+current time =  21
+->NEW CUSTOMER) customer: 11, time: 21, service time: 5, 
+->Desk 0 NEW SERVICE) customer 11, start time: 21, wait time: 0
+
+current time =  22
+->NEW CUSTOMER) none, 
+->Desk 0 IN SERVICE) serving customer:  11
+
+current time =  23
+->NEW CUSTOMER) customer: 12, time: 23, service time: 1, 
+->Desk 0 IN SERVICE) serving customer:  11
+->Desk 1 NEW SERVICE) customer 12, start time: 23, wait time: 0
+
+current time =  24
+->NEW CUSTOMER) customer: 13, time: 24, service time: 1, 
+->Desk 0 IN SERVICE) serving customer:  11
+->Desk 1 NEW SERVICE) customer 13, start time: 24, wait time: 0
+
+current time =  25
+->NEW CUSTOMER) none, 
+->Desk 0 IN SERVICE) serving customer:  11
+
+current time =  26
+->NEW CUSTOMER) none, 
+->Empty queue
+
+current time =  27
+->NEW CUSTOMER) none, 
+->Empty queue
+
+current time =  28
+->NEW CUSTOMER) none, 
+->Empty queue
+
+current time =  29
+->NEW CUSTOMER) customer: 14, time: 29, service time: 4, 
+->Desk 0 NEW SERVICE) customer 14, start time: 29, wait time: 0
+
+current time =  30
+->NEW CUSTOMER) customer: 15, time: 30, service time: 2, 
+->Desk 0 IN SERVICE) serving customer:  14
+->Desk 1 NEW SERVICE) customer 15, start time: 30, wait time: 0
+
+current time =  31
+->NEW CUSTOMER) none, 
+->Desk 0 IN SERVICE) serving customer:  14
+->Desk 1 IN SERVICE) serving customer:  15
+
+current time =  32
+->NEW CUSTOMER) none, 
+->Desk 0 IN SERVICE) serving customer:  14
+
+current time =  33
+->NEW CUSTOMER) none, 
+->Empty queue
+
+current time =  34
+->NEW CUSTOMER) none, 
+->Empty queue
+
+current time =  35
+->NEW CUSTOMER) customer: 16, time: 35, service time: 2, 
+->Desk 0 NEW SERVICE) customer 16, start time: 35, wait time: 0
+
+current time =  36
+->NEW CUSTOMER) none, 
+->Desk 0 IN SERVICE) serving customer:  16
+
+current time =  37
+->NEW CUSTOMER) customer: 17, time: 37, service time: 5, 
+->Desk 0 NEW SERVICE) customer 17, start time: 37, wait time: 0
+
+current time =  38
+->NEW CUSTOMER) customer: 18, time: 38, service time: 5, 
+->Desk 0 IN SERVICE) serving customer:  17
+->Desk 1 NEW SERVICE) customer 18, start time: 38, wait time: 0
+
+current time =  39
+->NEW CUSTOMER) none, 
+->Desk 0 IN SERVICE) serving customer:  17
+->Desk 1 IN SERVICE) serving customer:  18
+
+current time =  40
+->NEW CUSTOMER) customer: 19, time: 40, service time: 4, 
+->Desk 0 IN SERVICE) serving customer:  17
+->Desk 1 IN SERVICE) serving customer:  18
+
+current time =  41
+->NEW CUSTOMER) customer: 20, time: 41, service time: 1, 
+->Desk 0 IN SERVICE) serving customer:  17
+->Desk 1 IN SERVICE) serving customer:  18
+
+current time =  42
+->NEW CUSTOMER) none, 
+->Desk 0 NEW SERVICE) customer 19, start time: 42, wait time: 2
+->Desk 1 IN SERVICE) serving customer:  18
+
+current time =  43
+->NEW CUSTOMER) customer: 21, time: 43, service time: 4, 
+->Desk 0 IN SERVICE) serving customer:  19
+->Desk 1 NEW SERVICE) customer 20, start time: 43, wait time: 2
+
+current time =  44
+->NEW CUSTOMER) none, 
+->Desk 0 IN SERVICE) serving customer:  19
+->Desk 1 NEW SERVICE) customer 21, start time: 44, wait time: 1
+
+current time =  45
+->NEW CUSTOMER) customer: 22, time: 45, service time: 3, 
+->Desk 0 IN SERVICE) serving customer:  19
+->Desk 1 IN SERVICE) serving customer:  21
+
+current time =  46
+->NEW CUSTOMER) customer: 23, time: 46, service time: 5, 
+->Desk 0 NEW SERVICE) customer 22, start time: 46, wait time: 1
+->Desk 1 IN SERVICE) serving customer:  21
+
+current time =  47
+->NEW CUSTOMER) none, 
+->Desk 0 IN SERVICE) serving customer:  22
+->Desk 1 IN SERVICE) serving customer:  21
+
+current time =  48
+->NEW CUSTOMER) customer: 24, time: 48, service time: 2, 
+->Desk 0 IN SERVICE) serving customer:  22
+->Desk 1 NEW SERVICE) customer 23, start time: 48, wait time: 2
+
+current time =  49
+->NEW CUSTOMER) customer: 25, time: 49, service time: 1, 
+->Desk 0 NEW SERVICE) customer 24, start time: 49, wait time: 1
+->Desk 1 IN SERVICE) serving customer:  23
+
+current time =  50
+->NEW CUSTOMER) customer: 26, time: 50, service time: 5, 
+->Desk 0 IN SERVICE) serving customer:  24
+->Desk 1 IN SERVICE) serving customer:  23
+
+current time =  51
+->NEW CUSTOMER) none, 
+->Desk 0 NEW SERVICE) customer 25, start time: 51, wait time: 2
+->Desk 1 IN SERVICE) serving customer:  23
+
+current time =  52
+->NEW CUSTOMER) customer: 27, time: 52, service time: 4, 
+->Desk 0 NEW SERVICE) customer 26, start time: 52, wait time: 2
+->Desk 1 IN SERVICE) serving customer:  23
+
+current time =  53
+->NEW CUSTOMER) customer: 28, time: 53, service time: 2, 
+->Desk 0 IN SERVICE) serving customer:  26
+->Desk 1 NEW SERVICE) customer 27, start time: 53, wait time: 1
+
+current time =  54
+->NEW CUSTOMER) customer: 29, time: 54, service time: 5, 
+->Desk 0 IN SERVICE) serving customer:  26
+->Desk 1 IN SERVICE) serving customer:  27
+
+current time =  55
+->NEW CUSTOMER) customer: 30, time: 55, service time: 2, 
+->Desk 0 IN SERVICE) serving customer:  26
+->Desk 1 IN SERVICE) serving customer:  27
+
+current time =  56
+->NEW CUSTOMER) none, 
+->Desk 0 IN SERVICE) serving customer:  26
+->Desk 1 IN SERVICE) serving customer:  27
+
+current time =  57
+->NEW CUSTOMER) customer: 31, time: 57, service time: 5, 
+->Desk 0 NEW SERVICE) customer 28, start time: 57, wait time: 4
+->Desk 1 NEW SERVICE) customer 29, start time: 57, wait time: 3
+
+current time =  58
+->NEW CUSTOMER) customer: 32, time: 58, service time: 2, 
+->Desk 0 IN SERVICE) serving customer:  28
+->Desk 1 IN SERVICE) serving customer:  29
+
+current time =  59
+->NEW CUSTOMER) customer: 33, time: 59, service time: 3, 
+->Desk 0 NEW SERVICE) customer 30, start time: 59, wait time: 4
+->Desk 1 IN SERVICE) serving customer:  29
+
+Total wait time = 28
+Total customer = 34
+Average wait time = 0.823529
+MacBook-Pro-2:Queue Kyungmin$ exit
+exit
+
+Script done on Sat Oct 10 06:49:25 2020
