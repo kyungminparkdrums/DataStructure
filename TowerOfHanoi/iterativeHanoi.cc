@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <time.h>
 using namespace std;
 
 // Vector for storing disks for each tower; 0 indicates no disk on the tower
@@ -11,12 +12,17 @@ void iterativeHanoi(int);
 
 int main() {
     int nDisk; // # of disks
+    //clock_t start, stop;
 
     cout << "Solving the tower of Hanoi iteratively!\nEnter the number of disks: ";
     cin >> nDisk;
     
+    //start = clock();
     iterativeHanoi(nDisk);
- 
+    //stop = clock(); 
+
+    //cout << "Duration: " << (double)(stop - start) / CLOCKS_PER_SEC<< "s" << endl;
+
     return 0;
 }
 
@@ -33,7 +39,7 @@ void iterativeHanoi(int nDisk) {
                 towerA.pop_back();
                 cout << "Moving disk " << (nDisk-towerB.back()+1) << " from A to B" <<  endl;
             }
-            else if (towerB.back() > towerA.back()) {
+            else {
                 towerA.push_back(towerB.back());
                 towerB.pop_back();
                 cout << "Moving disk " << (nDisk-towerA.back()+1) << " from B to A" <<  endl;
@@ -45,7 +51,7 @@ void iterativeHanoi(int nDisk) {
                 towerA.pop_back();
                 cout << "Moving disk " << (nDisk-towerC.back()+1) << " from A to C" <<  endl;
             }
-            else if (towerC.back() > towerA.back()) {
+            else {
                 towerA.push_back(towerC.back());
                 towerC.pop_back();
                 cout << "Moving disk " << (nDisk-towerA.back()+1) << " from C to A" <<  endl;
@@ -57,7 +63,7 @@ void iterativeHanoi(int nDisk) {
                 towerB.pop_back();
                 cout << "Moving disk " << (nDisk-towerC.back()+1) << " from B to C" <<  endl;
             }
-            else if (towerC.back() > towerB.back()) {
+            else {
                 towerB.push_back(towerC.back());
                 towerC.pop_back();
                 cout << "Moving disk " << (nDisk-towerB.back()+1) << " from C to B" <<  endl;
@@ -73,7 +79,7 @@ void iterativeHanoi(int nDisk) {
                 towerA.pop_back();
                 cout << "Moving disk " << (nDisk-towerC.back()+1) << " from A to C" <<  endl;
             }
-            else if (towerC.back() > towerA.back()) {
+            else {
                 towerA.push_back(towerC.back());
                 towerC.pop_back();
                 cout << "Moving disk " << (nDisk-towerA.back()+1) << " from C to A" <<  endl;
@@ -85,7 +91,7 @@ void iterativeHanoi(int nDisk) {
                 towerA.pop_back();
                 cout << "Moving disk " << (nDisk-towerB.back()+1) << " from A to B" <<  endl;
             }
-            else if (towerB.back() > towerA.back()) {
+            else {
                 towerA.push_back(towerB.back());
                 towerB.pop_back();
                 cout << "Moving disk " << (nDisk-towerA.back()+1) << " from B to A" <<  endl;
@@ -97,7 +103,7 @@ void iterativeHanoi(int nDisk) {
                 towerB.pop_back();
                 cout << "Moving disk " << (nDisk-towerC.back()+1) << " from B to C" <<  endl;
             }
-            else if (towerC.back() > towerB.back()) {
+            else {
                 towerB.push_back(towerC.back());
                 towerC.pop_back();
                 cout << "Moving disk " << (nDisk-towerB.back()+1) << " from C to B" <<  endl;
