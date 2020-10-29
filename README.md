@@ -7,3 +7,5 @@ Solve the tower of Hanoi, recursively and iteratively
 # Project 2) Queue
 Implement Queue datatype and a simple simulation based on it
 
+# MidTerm Project) Cache Implementation
+Implement FIFO and LRU cache
