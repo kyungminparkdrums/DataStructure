@@ -21,17 +21,14 @@ typedef struct buffer {
 // Need to maintain LRU list or FIFO list with the allocated nodes
 struct buffer cache_buffer[MAX_CACHE_SIZE];
 
-// Head node for maintaining lrulist (in case of LRU simulator) or fifolist
+// Head node for maintaining lrulist (in case of LRU simulator) or fifolist: not used in this implementation
 #if 0
 struct buffer lrulist;
 #else
-struct buffer fifolist; // first node
+struct buffer fifolist;
 #endif
 
 void init() {
-    fifolist.prev = cache_buffer + (MAX_CACHE_SIZE-1);
-    fifolist.next = cache_buffer + 1;
-    
     // initialize all values to 0 (set 0 as the "empty" buffer)
     for (int i=0; i<MAX_CACHE_SIZE; i++)
         cache_buffer[i].blkno = 0;
@@ -76,24 +73,24 @@ buffer* search(unsigned long data) {
 
 int main(int argc, char* argv[])
 {
-    int	ret;
-    unsigned long blkno;
-    FILE* fp = NULL;
+	int	ret;
+	unsigned long blkno;
+	FILE* fp = NULL;
 
     size_t read;
     char* line = NULL;
     size_t len = 0;
     
     init();
-  
-    if ((fp = fopen(TRACE_FILE_NAME, "r")) == NULL) {
-        printf("%s trace file open fail.\n", TRACE_FILE_NAME);
 
-            return 0;
-    }
-    else {
-	printf("\nstart simulation!\n\n");
-    }
+	if ((fp = fopen(TRACE_FILE_NAME, "r")) == NULL) {
+		printf("%s trace file open fail.\n", TRACE_FILE_NAME);
+
+		return 0;
+	}
+	else {
+		printf("\nstart simulation!\n\n");
+	}
 
 	////////////////////////////////////////////////
 	// Start the simulation and print the output
@@ -140,7 +137,7 @@ int main(int argc, char* argv[])
         }
     }
     
-    fclose(fp);
+	fclose(fp);
 
     hit_ratio = 100*hit/(hit+miss);
     
@@ -148,6 +145,6 @@ int main(int argc, char* argv[])
     printf("Miss: %d out of %d\n", (int)miss, (int)(hit+miss));
     printf("Hit Ratio: %.2f percent\n", hit_ratio);
     
-    return 0;
+	return 0;
     
 }
