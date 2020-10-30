@@ -58,12 +58,12 @@ void insert(int pos, unsigned long data, int called) {
 
 // delete buffer at [pos] in cache_buffer.
 void delete(int pos) {
-    struct buffer* new_node = &cache_buffer[0] + pos;
+    struct buffer* removed = &cache_buffer[0] + pos;
     
-    new_node->prev->next = new_node->next;
-    new_node->next->prev = new_node->prev;
+    removed->prev->next = removed->next;
+    removed->next->prev = removed->prev;
     
-    new_node->blkno = 0;
+    removed->blkno = 0;
 }
 
 buffer* search(unsigned long data) {
