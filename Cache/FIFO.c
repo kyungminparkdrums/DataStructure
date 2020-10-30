@@ -73,7 +73,7 @@ buffer* search(unsigned long data) {
 
 int main(int argc, char* argv[])
 {
-	int	ret;
+	int  ret;
 	unsigned long blkno;
 	FILE* fp = NULL;
 
