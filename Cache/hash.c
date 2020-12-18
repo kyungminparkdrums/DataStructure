@@ -193,7 +193,7 @@ int main(int argc, char* argv[])
     while ((ret = fscanf(fp, "%lu\n", &blkno)) != EOF) {
         curtime++;
         pgref(blkno, hash_table);
-}
+    }
     clock_t end = clock();
     float time_spent = (float)(end - begin) / CLOCKS_PER_SEC;
     
